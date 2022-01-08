@@ -115,8 +115,9 @@ class app:
                 confidence=self.model.predict(image.reshape((1,256,256,3)))
                 print('Confidence',confidence)
                 if confidence[0][0]>=0.5:
+                    st.markdown('<p class="header-style">The Predictions Are :D</p>',unsafe_allow_html=True)
                     pred=1
-                    st.markdown('<p class="foul">FOUL</p>',unsafe_allow_html=True)
+                    st.markdown('<p class="foul">Foul</p>',unsafe_allow_html=True)
                     if select=='Foul':
                         st.markdown('<p class="header-style">The model correctly identifies the foul. :D</p>',unsafe_allow_html=True)
                     else:
@@ -124,7 +125,8 @@ class app:
                     break
                        
         if not pred:
-            st.markdown('<p class="clean">NO FOUL</p>',unsafe_allow_html=True)
+            st.markdown('<p class="header-style">The Predictions Are :D</p>',unsafe_allow_html=True)
+            st.markdown('<p class="clean">No Foul</p>',unsafe_allow_html=True)
             if select=='NoFoul':
                 st.markdown('<p class="header-style">The model correctly identifies the clean tackle. :D</p>',unsafe_allow_html=True)
             else:
