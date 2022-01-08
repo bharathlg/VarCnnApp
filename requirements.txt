@@ -3,3 +3,4 @@ numpy
 streamlit
 Pillow
 opencv-python
+python3-opencv
