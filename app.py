@@ -93,7 +93,7 @@ class app:
         color:green
         text-align:center;
         }
-        </style>
+        </style
         """,unsafe_allow_html=True)
         st.markdown('<p class="header-style">The predictions will be available soon</p>',unsafe_allow_html=True)
 
@@ -119,7 +119,7 @@ class app:
                     pred=1
                     st.markdown('<p class="foul">Foul</p>',unsafe_allow_html=True)
                     if select=='Foul':
-                        st.markdown('<p class="header-style">The model correctly identifies the foul. :D</p>',unsafe_allow_html=True)
+                        st.markdown('<p class="header-style">The model correctly identifies the foul :D</p>',unsafe_allow_html=True)
                     else:
                         st.markdown('<p class="header-style">The model does not correctly identifies the foul :(</p>',unsafe_allow_html=True)
                     break
@@ -128,7 +128,7 @@ class app:
             # st.markdown('<p class="header-style">The predictions will be available soon</p>',unsafe_allow_html=True)
             st.markdown('<p class="clean">No Foul</p>',unsafe_allow_html=True)
             if select=='NoFoul':
-                st.markdown('<p class="header-style">The model correctly identifies the clean tackle. :D</p>',unsafe_allow_html=True)
+                st.markdown('<p class="header-style">The model correctly identifies the clean tackle :D</p>',unsafe_allow_html=True)
             else:
                 st.markdown('<p class="header-style">The model does not correctly identifies the clean tackle :(</p>',unsafe_allow_html=True)
 
