@@ -95,7 +95,7 @@ class app:
         }
         </style>
         """,unsafe_allow_html=True)
-        st.markdown('<p class="header-style">The predictions will be available soon</p>',unsafe_allow_html=True)s
+        st.markdown('<p class="header-style">The predictions will be available soon</p>',unsafe_allow_html=True)
 
         if select=='Foul':
             vidcap = cv2.VideoCapture("foul-soccer.mp4")
