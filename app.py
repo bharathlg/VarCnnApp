@@ -60,14 +60,14 @@ class app:
             video = open("foul-soccer.mp4", "rb") 
             st.sidebar.video(video)
             st.sidebar.write(f'You have slected, {select}')
-            st.subheader('<p class="header-style">SIMULATION INITIATED</p>',unsafe_allow_html=True)
+            st.title('<p class="header-style">SIMULATION INITIATED</p>',unsafe_allow_html=True)
             st.markdown('<p class="header-style">Good choice!! Paulo Dybala, playing the ball and gets tackled!! We know it is one but can the VarCNN identify? Gear Up, We are going to know about that! </p>',unsafe_allow_html=True)
             
         else:
             video = open("CLEANTACKLE3.mp4", "rb") 
             st.sidebar.video(video)
             st.sidebar.write(f'You have slected, {select}')
-            st.subheader('<p class="header-style">SIMULATION INITIATED</p>',unsafe_allow_html=True)
+            st.title('<p class="header-style">SIMULATION INITIATED</p>',unsafe_allow_html=True)
             st.markdown('<p class="header-style">Good choice!! A fine tackle by the player, gets the ball neat and clean!! We know it is one but can the VarCNN identify? Gear Up, We are going to know about that! </p>',unsafe_allow_html=True)
             
         return select
