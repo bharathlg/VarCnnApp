@@ -33,6 +33,17 @@ st.markdown(
 
 
 st.title('VarCNN: The Automated Video Assistant Referee for Football')
+st.markdown(
+    """
+    <style>
+    .header-style {
+        font-size:20px;
+        font-family:sans-serif;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown('<p class="header-style" >Football is the most followed sport in the world, played in more than 200M+ countries. The sport has developed a lot in the recent century and so has the technology involved in the game. The Virtual Assistant Referee (VAR) is one of them and has impacted the game to a large extent. The role of VAR is simple yet complex; to intervene in between the play when the referees make a wrong decision or cannot make one. A specific scenario arises when they have to decide if a sliding tackle inside the box has resulted in a clean tackle or penalty for the opposition team. The technology is there to watch the moment at which tackle took place on repeat but the decisions are still made by humans and hence can be biased. I propose a CNN based foul detection which is theoretically based on the principle of the initial point of contact.</p>',unsafe_allow_html=True)
 
