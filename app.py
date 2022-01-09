@@ -47,7 +47,7 @@ class app:
         st.sidebar.markdown( """
         <style>
         .header-style {
-        font-size:25px;
+        font-size:30px;
         font-family:sans-serif;
         }
         </style>
