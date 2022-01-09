@@ -23,7 +23,7 @@ st.markdown(
     """
     <style>
     .header-style {
-        font-size:25px;
+        font-size:30px;
         font-family:sans-serif;
     }
     </style>
@@ -37,7 +37,7 @@ st.markdown(
     """
     <style>
     .header-style {
-        font-size:20px;
+        font-size:25px;
         font-family:sans-serif;
     }
     </style>
