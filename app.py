@@ -59,14 +59,14 @@ class app:
         if select=='Foul':
             video = open("foul-soccer.mp4", "rb") 
             st.sidebar.video(video)
-            st.sidebar.write('Simulation Initiated!!!')
+            st.sidebar.write(f'You have slected, {select}')
             st.markdown('<p class="header-style">SIMULATION INITIATED</p>',unsafe_allow_html=True)
             st.markdown('<p class="header-style">Good choice!! Paulo Dybala, playing the ball and gets tackled!! We know it is one but can the VarCNN identify? Gear Up, We are going to know about that! </p>',unsafe_allow_html=True)
             
         else:
             video = open("CLEANTACKLE3.mp4", "rb") 
             st.sidebar.video(video)
-            st.sidebar.write('Simulation Initiated!!!')
+            st.sidebar.write(f'You have slected, {select}')
             st.markdown('<p class="header-style">SIMULATION INITIATED</p>',unsafe_allow_html=True)
             st.markdown('<p class="header-style">Good choice!! A fine tackle by the player, gets the ball neat and clean!! We know it is one but can the VarCNN identify? Gear Up, We are going to know about that! </p>',unsafe_allow_html=True)
             
@@ -115,7 +115,7 @@ class app:
                 confidence=self.model.predict(image.reshape((1,256,256,3)))
                 print('Confidence',confidence)
                 if confidence[0][0]>=0.5:
-                    st.markdown('<p class="header-style">--------The Predictions Are--------</p>',unsafe_allow_html=True)
+                    st.markdown('<p class="header-style">The predictions will be available soon</p>',unsafe_allow_html=True)
                     pred=1
                     st.markdown('<p class="foul">Foul</p>',unsafe_allow_html=True)
                     if select=='Foul':
@@ -125,7 +125,7 @@ class app:
                     break
                        
         if not pred:
-            st.markdown('<p class="header-style">--------The Predictions Are--------</p>',unsafe_allow_html=True)
+            st.markdown('<p class="header-style">The predictions will be available soon</p>',unsafe_allow_html=True)
             st.markdown('<p class="clean">No Foul</p>',unsafe_allow_html=True)
             if select=='NoFoul':
                 st.markdown('<p class="header-style">The model correctly identifies the clean tackle. :D</p>',unsafe_allow_html=True)
