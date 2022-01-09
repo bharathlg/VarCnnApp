@@ -63,7 +63,7 @@ class app:
         }
         </style>
         """,unsafe_allow_html=True)
-        st.sidebar.markdown('<p class="header-style">VAR In Action</p>',unsafe_allow_html=True)
+        st.sidebar.markdown('<p class="header-style">VarCNN In Action</p>',unsafe_allow_html=True)
     
         select=st.sidebar.selectbox('SELECT',['Foul','NoFoul'])
 
